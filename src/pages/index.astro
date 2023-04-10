@@ -1,15 +1,18 @@
 ---
+const MY_ENV_VAR = import.meta.env.MY_ENV_VAR;
+const PUBLIC_MY_ENV_VAR = import.meta.env.PUBLIC_MY_ENV_VAR;
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <p>MY_ENV_VAR: {MY_ENV_VAR}</p>
+    <p>PUBLIC_MY_ENV_VAR: {PUBLIC_MY_ENV_VAR}</p>
+  </body>
 </html>
